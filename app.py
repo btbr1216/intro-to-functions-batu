@@ -8,39 +8,66 @@ t.shape('turtle')
 
 # turtle.done()
 
-def double(one, two):
-    print(one)
-    print(two)
-double(6, 7)
+# def double(one, two):
+#     print(one)
+#     print(two)
+# double(6, 7)
 
-def turn(number, shapee, side):
+# rangee = 0
 
-    turnamt = 0
-    if shapee == "square":
-        turnamt = 90
-    elif shapee == "triangle":
-        turnamt = 120
+
+# def turn(number, shapee, side):
+
+#     turnamt = 0
+#     if shapee == "square":
+#         turnamt = 90
+#     elif shapee == "triangle":
+#         turnamt = 120
     
-    if side == "left":
-        t.forward(-number)
-        t.left(-turnamt)
-    elif True:
-        t.forward(number)
-        t.left(turnamt)
+#     if side == "left":
+#         t.backward(number)
+#         if upsidedown:
+#             t.left(turnamt)
+#         else:
+#             t.right(turnamt)
+#     else:
+#         t.forward(number)
+#         if upsidedown:
+#             t.right(turnamt)
+#         else:
+#             t.left(turnamt)
+
+
+# shapee = "triangle"
+# size = 200
+# side = "left"
+# upsidedown = True
 
 
 
-shapee = "triangle"
-size = 200
-side = "right"
+# if shapee == "square":
+#     rangee = 4
+# elif shapee == "triangle":
+#     rangee = 3
+
+# for i in range(rangee):
+#     turn(size, shapee, side)
+
+import random
+
+number = random.random()
+number *= 10
+number = round(number)
+if number > 10:
+    number = 10
+
+# length = 100
+# for i in range(10000000000):
+#     t.forward(length)
+#     t.speed(10000000)
+#     t.left(144)
+#     if i % 5 == 0:
+#         length += 5
+#         t.left(5)
 
 
-
-rangee = 0
-if shapee == "square":
-    rangee = 4
-elif shapee == "triangle":
-    rangee = 3
-
-for i in range(rangee):
-    turn(size, shapee, side)
