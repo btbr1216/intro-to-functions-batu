@@ -31,8 +31,8 @@ def turn(number, shapee, side):
 
 
 shapee = "triangle"
-size = 500
-side = "left"
+size = 200
+side = "right"
 
 
 
