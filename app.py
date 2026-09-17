@@ -53,17 +53,17 @@ t.shape('turtle')
 # for i in range(rangee):
 #     turn(size, shapee, side)
 
-import random
+# import random
 
-for i in range(10000000):
-    number = random.random()
-    number *= 200
-    number = round(number)
-    t.forward(number)
-    number = random.random()
-    number *= 360
-    number = round(number)
-    t.left(number)
+# for i in range(10000000):
+#     number = random.random()
+#     number *= 200
+#     number = round(number)
+#     t.forward(number)
+#     number = random.random()
+#     number *= 360
+#     number = round(number)
+#     t.left(number)
 
 
 # length = 100
@@ -74,4 +74,12 @@ for i in range(10000000):
 #     if i % 5 == 0:
 #         length += 5
 #         t.left(5)
+
+def oddoreven(input):
+    if input % 2 == 0:
+        print("even")
+    else:
+        print("odd")
+oddoreven(67)
+
 
