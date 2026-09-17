@@ -55,11 +55,16 @@ t.shape('turtle')
 
 import random
 
-number = random.random()
-number *= 10
-number = round(number)
-if number > 10:
-    number = 10
+for i in range(10000000):
+    number = random.random()
+    number *= 200
+    number = round(number)
+    t.forward(number)
+    number = random.random()
+    number *= 360
+    number = round(number)
+    t.left(number)
+
 
 # length = 100
 # for i in range(10000000000):
