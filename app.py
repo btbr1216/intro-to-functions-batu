@@ -81,9 +81,17 @@ t.shape('turtle')
 #     else:
 #         print("odd")
 # oddoreven(67) """
+t.speed(10000000000000)
+length = 0
+for i in range(60):
+    length += 5
+    for i in range(3):
+        t.forward(length)
+        t.left(90)
+    t.left(5)
 
-tipoptions = [0, 15, 20, 25]
-serviceoptions = ["bad", "okay", "good", "great"]
+tipoptions = [0, 15, 20, 25, 100]
+serviceoptions = ["bad", "okay", "good", "great", "phenomenal"]
 
 def tipfunction(bill, service):
     tip = "nothing"
@@ -91,15 +99,30 @@ def tipfunction(bill, service):
         if i == service:
             tip = tipoptions[serviceoptions.index(i)]
     if tip == "nothing":
-        return
+
+        while True:
+            service = input("What?")
+            breakloop = False
+            for i in serviceoptions:
+                if i == service:
+                    tip = tipoptions[serviceoptions.index(i)]
+                    breakloop = True
+            if breakloop:
+                break
+
+    
     print("paid amount:", bill)
     print("service:", service)
     print("tip:", tip, "%")
-    total = bill
+    total = float(bill) + float(bill)*float(tip)*0.01
 
     print("total:", total)
 
+
 bill = input("Input bill.")
+bill = float(bill)
+
 service = input("How was the service?")
 
 tipfunction(bill, service)
+
