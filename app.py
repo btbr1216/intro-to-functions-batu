@@ -4,6 +4,23 @@ t = Turtle()
 
 t.shape('turtle')
 
+def triangle():
+    t.forward(90)
+    t.left(120)
+    t.forward(90)
+    t.left(120)
+    t.forward(90)
+triangle()
+def rectangle():
+    t.forward(125)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
+    t.forward(125)
+    t.left(90)
+    t.forward(100)
+    
+
 # t.forward(200)
 
 # turtle.done()
@@ -81,14 +98,17 @@ t.shape('turtle')
 #     else:
 #         print("odd")
 # oddoreven(67) """
-t.speed(10000000000000)
-length = 0
-for i in range(60):
-    length += 5
-    for i in range(3):
-        t.forward(length)
-        t.left(90)
-    t.left(5)
+
+
+# t.speed(10000000000000)
+# length = 0
+# for i in range(60):
+#     length += 5
+#     for i in range(3):
+#         t.forward(length)
+#         t.left(90)
+#     t.left(5)
+
 
 tipoptions = [0, 15, 20, 25, 100]
 serviceoptions = ["bad", "okay", "good", "great", "phenomenal"]
